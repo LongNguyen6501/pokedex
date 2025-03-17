@@ -16,7 +16,8 @@ export default function Index() {
   }
 
   return (
-    <div>
+    <div className="main-container">
+      <h1>Pokedex</h1>
       <form onSubmit={redirect}>
         <input
           type="search"
