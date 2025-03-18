@@ -82,48 +82,65 @@ h1 {
   font-weight: 800;
 }
 
-.section-container {
+.image-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding: 0 1rem;
 }
 
 @media (min-width: 800px) {
-  .section-container {
+
+  .image-container {
     flex-direction: row;
     width: 100%;
     max-width: 960px;
-
   }
+
 }
 
-.section-container section {
-  background: #c5c5c5;
+.types-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.types {
+  background-color: #c5c5c5;
+  padding: .5rem .75rem;
+  border-radius: 12px;
+  margin: 5px;
+
+}
+
+.halve-screen {
   padding: 1rem 1.5rem;
   border-radius: 12px;
   flex: 1;
 }
 
-.section-container section h2 {
+.halve-screen section {
+  background: #c5c5c5;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+
+.image-container section h2 {
   color: #D94230;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
 
-.section-container p {
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-  font-weight: 300;
-  color: #404040;
-}
+
 
 ul {
   padding: 0;
   list-style-type: none;
   height: 100%;
   margin-left: 0.5rem;
-  margin-top: 0.5rem;
   font-weight: 300;
   color: #404040;
 }
